@@ -9,8 +9,15 @@
   
   </details>
 - **Links**:
+  - arxiv: 
+  - HuggingFace: 
+  - GitHub: 
+  - WebSite: 
 - **Progress**: not started / reading / done
-- **Notes**: (if any)
+- **Notes**:
+  <details>
+  (if any)
+  </details>
 
 
 ---

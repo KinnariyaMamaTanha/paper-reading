@@ -2,9 +2,9 @@
 
 ### Paper Title
 
-- **Tags**:
-- **Authors**:
-- **Abstract**:
+- **Tags**: 
+- **Authors**: 
+- **Abstract**: 
   <details>
   
   </details>
@@ -24,12 +24,12 @@
 
 ### Blog Title
 
-- **Tags**:
-- **Author(s)**:
-- **Abstract**:
+- **Tags**: 
+- **Author(s)**: 
+- **Abstract**: 
   <details>
   (if any)
   </details>
-- **Links**:
+- **Links**: 
 - **Progress**: not started / reading / done
 - **Notes**: (if any)

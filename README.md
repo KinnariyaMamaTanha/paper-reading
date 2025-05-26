@@ -2,6 +2,33 @@
 
 > (Now) A personal paper / blog reading list of Kinnari. Welcome to contribute together! See [template](./template.md) for more format requirements.
 
+## 2025-05-26
+
+### Scaling Llama 3 Training with Efficient Parallelism Strategies
+
+- **Tags**: LlaMa, Distributed Training, Parallelism, MLsys
+- **Authors**:
+- **Abstract**:
+  <details>
+  Llama is a widely used open-source large language model. This paper presents the design and implementation of the parallelism techniques used in Llama 3 pre-training. To achieve efficient training on tens of thousands of GPUs, Llama 3 employs a combination of four-dimensional parallelism: fully sharded data parallelism, tensor parallelism, pipeline parallelism, and context parallelism. Beyond achieving efficiency through parallelism and model co-design, we also address other equally critical aspects. First, we enhance flexibility—for example, through novel pipeline parallelism that supports evolving batch sizes and heterogeneous model architectures, and innovative context parallelism that enables model innovations such as document-mask attention. Second, we prioritize practicality—for example, by enabling the diagnosis of performance and numerical issues at scale. Finally, drawing on our experience with large-scale training, we provide recommendations for future hardware design.
+  </details>
+- **Links**: https://aisystemcodesign.github.io/papers/Llama3-ISCA25.pdf
+- **Progress**: not started
+
+## 2025-05-21
+
+### SoftCoT: Soft Chain-of-Thought for Efficient Reasoning with LLMs
+
+- **Tags**: LLM Reasoning, CoT
+- **Authors**:
+- **Abstract**:
+  <details>
+  Chain-of-Thought (CoT) reasoning enables Large Language Models (LLMs) to solve complex reasoning tasks by generating intermediate reasoning steps. However, most existing approaches focus on hard token decoding, which constrains reasoning within the discrete vocabulary space and may not always be optimal. While recent efforts explore continuous-space reasoning, they often suffer from catastrophic forgetting, limiting their applicability to state-of-the-art LLMs that already perform well in zero-shot settings with a proper instruction. To address this challenge, we propose a novel approach for continuous-space reasoning that does not require modifying the underlying LLM. Specifically, we employ a lightweight assistant model to generate instance-specific soft thought tokens speculatively as the initial chain of thoughts, which are then mapped into the LLM's representation space via a projection module. Experimental results on five reasoning benchmarks demonstrate that our method enhances LLM reasoning performance through supervised, parameter-efficient fine-tuning.
+  </details>
+- **Links**:
+  - arxiv: https://arxiv.org/abs/2502.12134
+- **Progress**: not started
+
 ## 2025-05-16
 
 ### Monarch: Expressive Structured Matrices for Efficient and Accurate Training
@@ -30,12 +57,11 @@
   - HuggingFace: https://huggingface.co/agentica-org/DeepScaleR-1.5B-Preview
   - GitHub: https://github.com/agentica-project/rllm
   - WebSite: https://pretty-radio-b75.notion.site/DeepScaleR-Surpassing-O1-Preview-with-a-1-5B-Model-by-Scaling-RL-19681902c1468005bed8ca303013a4e2
-- **Progress**: not started / reading / done
-- **Notes**: (if any)
+- **Progress**: not started
 
 ### FastCuRL: Curriculum Reinforcement Learning with Progressive Context Extension for Efficient Training R1-like Reasoning Models
 
-- **Tags**: Curriculum Learning, RL Finetune, LLM, 
+- **Tags**: Curriculum Learning, RL Finetune, LLM,
 - **Authors**: Mingyang Song, Mao Zheng, Zheng Li, Wenjie Yang, Xuan Luo, Yue Pan, Feng Zhang
 - **Abstract**:
   <details>

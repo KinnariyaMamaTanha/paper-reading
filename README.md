@@ -2,6 +2,34 @@
 
 > (Now) A personal paper / blog reading list of Kinnari. Welcome to contribute together! See [template](./template.md) for more format requirements.
 
+## 2025-06-06
+
+### Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling
+
+- **Tags**: dLM
+- **Authors**: Kaiwen Zheng, Yongxin Chen, Hanzi Mao, Ming-Yu Liu, Jun Zhu, Qinsheng Zhang
+- **Abstract**:
+  <details>
+  Masked diffusion models (MDMs) have emerged as a popular research topic for generative modeling of discrete data, thanks to their superior performance over other discrete diffusion models, and are rivaling the auto-regressive models (ARMs) for language modeling tasks. The recent effort in simplifying the masked diffusion framework further leads to alignment with continuous-space diffusion models and more principled training and sampling recipes. In this paper, however, we reveal that both training and sampling of MDMs are theoretically free from the time variable, arguably the key signature of diffusion models, and are instead equivalent to masked models. The connection on the sampling aspect is drawn by our proposed first-hitting sampler (FHS). Specifically, we show that the FHS is theoretically equivalent to MDMs' original generation process while significantly alleviating the time-consuming categorical sampling and achieving a 20 speedup. In addition, our investigation raises doubts about whether MDMs can truly beat ARMs in text generation. We identify, for the first time, an underlying numerical issue, even with the commonly used 32-bit floating-point precision, which results in inaccurate categorical sampling. We show that it lowers the effective temperature both theoretically and empirically, and the resulting decrease in token diversity makes previous evaluations, which assess the generation quality solely through the incomplete generative perplexity metric, somewhat unfair.
+  </details>
+- **Links**:
+  - arxiv: http://arxiv.org/abs/2409.02908
+- **Progress**: not started
+
+### When Do LLMs Help With Node Classification? A Comprehensive Analysis
+
+- **Tags**: LLM, Graph NN
+- **Authors**: Xixi Wu, Yifei Shen, Fangzhou Ge, Caihua Shan, Yizhu Jiao, Xiangguo Sun, Hong Cheng
+- **Abstract**:
+  <details>
+  Node classification is a fundamental task in graph analysis, with broad applications across various fields. Recent breakthroughs in Large Language Models (LLMs) have enabled LLM-based approaches for this task. Although many studies demonstrate the impressive performance of LLM-based methods, the lack of clear design guidelines may hinder their practical application. In this work, we aim to establish such guidelines through a fair and systematic comparison of these algorithms. As a first step, we developed LLMNodeBed, a comprehensive codebase and testbed for node classification using LLMs. It includes 10 homophilic datasets, 4 heterophilic datasets, 8 LLM-based algorithms, 8 classic baselines, and 3 learning paradigms. Subsequently, we conducted extensive experiments, training and evaluating over 2,700 models, to determine the key settings (e.g., learning paradigms and homophily) and components (e.g., model size and prompt) that affect performance. Our findings uncover 8 insights, e.g., (1) LLM-based methods can significantly outperform traditional methods in a semi-supervised setting, while the advantage is marginal in a supervised setting; (2) Graph Foundation Models can beat open-source LLMs but still fall short of strong LLMs like GPT-4o in a zero-shot setting. We hope that the release of LLMNodeBed, along with our insights, will facilitate reproducible research and inspire future studies in this field. Codes and datasets are released at \href{this https URL}{\texttt{this https URL}}.
+  </details>
+- **Links**:
+  - arxiv: https://arxiv.org/abs/2502.00829
+  - HuggingFace: https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/xxwu/LLMNodeBed
+  - GitHub: https://link.zhihu.com/?target=https%3A//github.com/WxxShirley/LLMNodeBed
+- **Progress**: not started
+
 ## 2025-05-31
 
 ### ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT
